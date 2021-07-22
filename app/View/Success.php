@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=$data['title'];?></title>
+    <title><?=$data['title']?></title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,11 +12,8 @@
     <?php include 'Menu.php'; ?>
     <h1>Создание задачи</h1>
     <p>Задача успешно создана!</p>
-    <a href="/">Перейти к задачам</a>
+    <a href="/user/index">Перейти к задачам</a>
 </div>
 
-
 </body>
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 </html>

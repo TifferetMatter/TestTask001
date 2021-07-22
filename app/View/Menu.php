@@ -7,7 +7,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li <?=('index' == ($data['active'] ?? '') ? 'class=active' : '')?>><a href="/">Список задач</a></li>
+                <li <?=('index' == ($data['active'] ?? '') ? 'class=active' : '')?>><a href="/user/index">Список задач</a></li>
                 <li <?=('create' == ($data['active'] ?? '') ? 'class=active' : '')?>><a href="/user/create">Создать задачу</a></li>
                 <?=(($data['logon'] ?? '') ? '<li><a href="/admin/index">Страница администратора</a></li>' : '')?>
             </ul>

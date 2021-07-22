@@ -24,8 +24,8 @@ class Application
 
 		// analyze
 		if (
-			preg_match('/^(admin)\/(index|edit|update|auth|login|logout)$/', $route, $match) ||
-			preg_match('/^(user)\/(index|create|json|add)$/', $route, $match)
+			preg_match('/(admin)\/(index|edit|update|auth|login|logout)$/', $route, $match) ||
+			preg_match('/(user)\/(index|create|json|add)$/', $route, $match)
 		)
 		{
 			// set controller class

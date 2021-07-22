@@ -55,9 +55,9 @@ class Admin
     {
     	// add data...
         if ($this->model->Update(
-        	$_POST['id'] ?? 0,
-			$_POST['text'] ?? '',
-			$_POST['done'] ?? 0
+        	intval($_POST['id'] ?? 0),
+			strval($_POST['text'] ?? ''),
+			intval($_POST['status'] ?? 0)
 		))
         {
         	// set user message
